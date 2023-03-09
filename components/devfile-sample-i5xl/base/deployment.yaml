@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-i5xl
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:FgnBp-devfile-sample-i5xl
+      - image: quay.io/redhat-appstudio/user-workload@sha256:542f112ec6571bde36044060597203d7412523d076bb9f7b87a2188df5c7266d
         name: my-nodejs
         ports:
         - containerPort: 3001
