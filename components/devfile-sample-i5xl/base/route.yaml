@@ -1,0 +1,21 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-i5xl
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-i5xl
+    app.kubernetes.io/part-of: sample
+  name: devfile-sample-i5xl
+  namespace: phayes1-tenant
+spec:
+  path: /
+  port:
+    targetPort: 3001
+  to:
+    kind: Service
+    name: devfile-sample-i5xl
+    weight: null
+status: {}
